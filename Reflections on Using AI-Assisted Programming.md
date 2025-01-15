@@ -70,3 +70,5 @@ However, there are two tasks that AI cannot replace (at least for now):
 
 ### **Conclusion**  
 With these changes, developers’ roles will evolve into hybrid roles combining product manager and technical architect responsibilities, whereas traditional programmer roles will fade out. This is what it ought to be.
+
+Chinese version: https://github.com/yaowangm/TechNotes/blob/main/%E8%AF%95%E7%94%A8AI%E8%BE%85%E5%8A%A9%E7%BC%96%E7%A8%8B%E7%9A%84%E5%BF%83%E5%BE%97.md
