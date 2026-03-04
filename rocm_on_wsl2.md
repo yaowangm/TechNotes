@@ -53,10 +53,11 @@ install llama.cpp：
 git clone https://github.com/ggerganov/llama.cpp.git
 cd llama.cpp
 mkdir -p build-rocm && cd build-rocm
-cmake .. \
-  -DCMAKE_BUILD_TYPE=Release \
-  -DGGML_HIP=ON \
-  -DAMDGPU_TARGETS="gfx1150"
+cmake .. -DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1150 -DCMAKE_BUILD_TYPE=Release   -DGGML_AMD_PAGE_SIZE=65536 \
+  -DGGML_AMD_EXPLICIT_SYNC=ON \
+  -DGGML_AMD_PAGE_SIZE=65536 \
+  -DGGML_AMD_EXPLICIT_SYNC=ON \
+-DGGML_FLASH_ATTN=ON
 make -j$(nproc)
 sudo make install
 
