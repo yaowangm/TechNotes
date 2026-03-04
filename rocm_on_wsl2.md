@@ -30,6 +30,7 @@ install librocdxg:
 git clone https://github.com/ROCm/librocdxg.git
 cd librocdxg
 cd ~/librocdxg/build
+(cmake .. -DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1150 -DCMAKE_BUILD_TYPE=Release)
 cmake .. \
   -DWIN_SDK="/mnt/c/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/shared/" \
   -DCMAKE_BUILD_TYPE=Release
